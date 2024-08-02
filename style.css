@@ -12,22 +12,34 @@ html{
 #web-app{
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
     justify-content: space-between;
     align-items: center;
-    gap: 6rem;
+    gap: 3rem;
+    background-image: radial-gradient(circle at center center, #1917fc, #859d9e), repeating-radial-gradient(circle at center center, #1917fc, #76a106, 32px, transparent 64px, transparent 32px);
+    background-blend-mode: multiply;
+    background-color: #859d9e;
+    width: 100vw;
+    height: 100vh;
 }
 
 #game-title{
     margin-top: 1rem;
     font-size: 50px;
     font-weight: bold;
+    text-shadow: 0 0 5px #D1D1D1, 0 0 10px #D1D1D1, 0 0 15px #D1D1D1, 0 0 20px #2b2da9, 0 0 30px #2b2da9, 0 0 40px #2b2da9, 0 0 55px #2b2da9, 0 0 75px #2b2da9, 2px 2px 2px rgba(206,89,55,0);
 }
 
 #questions-container{
     font-size: 32px;
-    padding: 1rem;
+    padding: 4rem;
+    padding-inline: 8rem;
+    background: #2b2da9;
+    background: -webkit-linear-gradient(45deg, #2b2da9 0%, #9737ce 100%);
+    background: linear-gradient(45deg, #2b2da9 0%, #9737ce 100%);
+    border-radius: 50% 50% 50% 50% / 66% 29% 71% 34% ;
+    -webkit-box-shadow: 3px 3px 26.5px 3.5px #ffffff;
+    -moz-box-shadow: 3px 3px 26.5px 3.5px #ffffff;
+    box-shadow: 3px 3px 26.5px 3.5px #ffffff;
 }
 
 #answers-container{
@@ -38,6 +50,7 @@ html{
     align-items: center;
     gap: 2rem;
     width: 80%;
+    font-size: 25px;
 }
 
 .answer{
@@ -47,25 +60,28 @@ html{
     flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
     padding: 1rem;
     text-align: center;
-    background-color: rgb(1, 11, 104);
+    background: linear-gradient(45deg, #2b2da9 0%, #9737ce 100%);
     font-size: 22px;
     border-radius: 15px;
 }
 
 .answer:hover{
-    background-color: rgb(0, 15, 146);
     border: 2px solid yellow;
+    -webkit-box-shadow: 3px 3px 26.5px 3.5px #ffffff;
+    -moz-box-shadow: 3px 3px 26.5px 3.5px #ffffff;
+    box-shadow: 3px 3px 26.5px 3.5px #ffffff;
 }
 
 #subject{
-    font-size: 16px;
+    font-size: 18px;
     text-transform: capitalize;
-    color: rgb(58, 58, 255);
+    color: orange;
+    font-weight: bold;
 }
 
 #reload-btn{
     border: none;
-    background-color: rgb(1, 11, 104);
+    background: linear-gradient(45deg, #2b2da9 0%, #9737ce 100%);
     color: white;
     padding: 1rem;
     padding-inline: 2rem;
@@ -78,5 +94,7 @@ html{
 }
 
 #reload-btn:hover{
-    background-color: rgb(0, 15, 146)
+    -webkit-box-shadow: 3px 3px 26.5px 3.5px #ffffff;
+    -moz-box-shadow: 3px 3px 26.5px 3.5px #ffffff;
+    box-shadow: 3px 3px 26.5px 3.5px #ffffff;
 }
